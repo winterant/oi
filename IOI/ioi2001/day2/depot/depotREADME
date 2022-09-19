@@ -1,0 +1,14 @@
+This is the README file for IOI 2001 competition task Depot.
+
+This directory includes
+- the task description, depot.rtf
+- the competition input files, depot_n.in, n=1,..,25
+- sample correct output files, depot_n.out, n=1,..,25 
+  (any order of lines in the answer is permitted)
+
+If you want to check up the solution,
+please see the IOI 2001 publication, which you can ftp from
+ftp://ftp.cs.uta.fi/pub/reports/pdf/A-2001-7.pdf
+
+
+

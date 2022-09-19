@@ -1,0 +1,5 @@
+Unit Play;
+Interface
+  Procedure StartGame;
+  Procedure MyMove(C:Char);
+  Procedure YourMove(Var C:Char);

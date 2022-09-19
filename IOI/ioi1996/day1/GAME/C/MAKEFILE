@@ -1,0 +1,12 @@
+
+CC   = bcc
+LINK = tlink
+
+all: game.exe
+
+game.exe: game.obj play.obj
+        $(LINK) -LC:\BC\LIB c0s.obj game.obj play.obj,game.exe,,cs.lib;
+
+game.obj: game.c play.h
+        $(CC) -c -IC:\BC\INCLUDE game.c
+

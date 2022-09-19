@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0056)http://olympiads.win.tue.nl/ioi/ioi95/contest/lgame.html -->
+<HTLM><HTML><HEAD><TITLE>IOI'95 Task: Letter Game</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<META content="MSHTML 6.00.2600.0" name=GENERATOR></HEAD>
+<BODY background="IOI'95 Task Letter Game.files/backgrnd.gif">
+<H1><A href="http://olympiads.win.tue.nl/ioi/ioi95/index.html"><IMG 
+alt="[ IOI Home page ]" hspace=5 src="IOI'95 Task Letter Game.files/logo.gif" 
+align=middle border=0></A> Task: Letter Game</H1>
+<CENTER><IMG src="" align=bottom> <BR>Figure&nbsp;1:Each of the 26 lowercase 
+letters and its value </CENTER>
+<P>Letter games are popular at home and on television. In one version of the 
+game, every letter has a value, and you collect letters to form one or more 
+words giving the highest possible score. Unless you have `a way with words', you 
+will try all the words you know, sometimes looking up the spelling, and then 
+compute the scores. Obviously, this can be done more accurately by computer. 
+<P>Given the values in Figure&nbsp;1, a list of English words, and the letters 
+collected: find the highest scoring words or pairs of words that can be formed. 
+<H2>Input Data</H2>The input file <TT>INPUT.TXT</TT> contains one line with a 
+string of lowercase letters (from `<TT>a</TT>' to `<TT>z</TT>'): the letters 
+collected. The string consists of at least&nbsp;3 and at most 7 letters in 
+arbitrary order. 
+<P>The `dictionary' file <TT>WORDS.TXT</TT> consists of at most 40,000 lines. At 
+the end of this file is a line with a single period (`<TT>.</TT>'). Each of the 
+other lines contains a string of at least&nbsp;3 and at most&nbsp;7 lowercase 
+letters. The file <TT>WORDS.TXT</TT> is sorted alphabetically and contains no 
+duplicates. 
+<H2>Output Data</H2>On the first line of file <TT>OUTPUT.TXT</TT>, your program 
+should write the highest score (Subtask&nbsp;A), and on each of the following 
+lines, all the words and/or word pairs from file <TT>WORDS.TXT</TT> with this 
+score (Subtask&nbsp;B). A letter must not occur more often in an output line 
+than in the input line. Use the letter values given in Figure&nbsp;1. 
+<P>When a combination of two words can be formed with the given letters, the 
+words should be printed on the same line separated by a space. Do not duplicate 
+pairs; for example, `<TT>rag prom</TT>' and `<TT>prom rag</TT>' are the same 
+pair, therefore only one of them should be written. A pair in an output line may 
+consist of two identical words. 
+<H2>Example Input and Output</H2>Figure&nbsp;2 gives example input and output. 
+<CENTER><PRE>
+_____________   _____________    ______________
+| WORDS.TXT |   | INPUT.TXT |    | OUTPUT.TXT |
+|___________|   |___________|    |____________|
+| profile   |   | prmgroa   |    | 24         |
+| program   |   |___________|    | program    |
+| prom      |                    | prom rag   |
+| rag       |                    |____________|
+| ram       |                                  
+| rom       |                                  
+| .         |                                  
+|___________|                                  
+</PRE>Figure&nbsp;2: Example input and output </CENTER>
+<HR>
+<A href="mailto:ioi95@win.tue.nl">IOI 95</A> </BODY></HTML>

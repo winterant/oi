@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0055)http://olympiads.win.tue.nl/ioi/ioi95/contest/shop.html -->
+<HTLM><HTML><HEAD><TITLE>IOI'95 Task: Shopping</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<META content="MSHTML 6.00.2600.0" name=GENERATOR></HEAD>
+<BODY background="IOI'95 Task Shopping.files/backgrnd.gif">
+<H1><A href="http://olympiads.win.tue.nl/ioi/ioi95/index.html"><IMG 
+alt="[ IOI Home page ]" hspace=5 src="IOI'95 Task Shopping.files/logo.gif" 
+align=middle border=0></A> Task: Shopping Offers</H1><IMG alt=Tulip 
+src="IOI'95 Task Shopping.files/shop1.gif" align=bottom> =2, <IMG alt=Vase 
+src="IOI'95 Task Shopping.files/shop2.gif" align=bottom> =5, <IMG alt=Tulip 
+src="IOI'95 Task Shopping.files/shop1.gif" align=bottom> +<IMG alt=Tulip 
+src="IOI'95 Task Shopping.files/shop1.gif" align=bottom> +<IMG alt=Tulip 
+src="IOI'95 Task Shopping.files/shop1.gif" align=bottom> =5, <IMG alt=Vase 
+src="IOI'95 Task Shopping.files/shop2.gif" align=bottom> +<IMG alt=Vase 
+src="IOI'95 Task Shopping.files/shop2.gif" align=bottom> +<IMG alt=Tulip 
+src="IOI'95 Task Shopping.files/shop1.gif" align=bottom> =10, <IMG alt=Tulip 
+src="IOI'95 Task Shopping.files/shop1.gif" align=bottom> +<IMG alt=Tulip 
+src="IOI'95 Task Shopping.files/shop1.gif" align=bottom> +<IMG alt=Tulip 
+src="IOI'95 Task Shopping.files/shop1.gif" align=bottom> +<IMG alt=Vase 
+src="IOI'95 Task Shopping.files/shop2.gif" align=bottom> +<IMG alt=Vase 
+src="IOI'95 Task Shopping.files/shop2.gif" align=bottom> =? 
+<P>In a shop each kind of product has a price. For example, the price of a 
+flower is 2&nbsp;ICU (Informatics Currency Units) and the price of a vase is 
+5&nbsp;ICU. In order to attract more customers, the shop introduces some special 
+offers. 
+<P>A special offer consists of one or more product items for a reduced price. 
+Examples: three flowers for 5&nbsp;ICU instead of&nbsp;6, or two vases together 
+with one flower for 10&nbsp;ICU instead of&nbsp;12. 
+<P>Write a program that calculates the price a customer has to pay for certain 
+items, making optimal use of the special offers. That is, the price should be as 
+low as possible. You are not allowed to add items, even if that would lower the 
+price. 
+<P>For the prices and offers given above, the (lowest) price for three flowers 
+and two vases is 14&nbsp;ICU: two vases and one flower for the reduced price of 
+10&nbsp;ICU and two flowers for the regular price of 4&nbsp;ICU. 
+<H2>Input Data</H2>The input data appears in two files: <TT>INPUT.TXT</TT> and 
+<TT>OFFER.TXT</TT>. The first file describes the purchases (in the `shopping 
+basket'). The second file describes the special offers. In both files, only 
+integers are used. 
+<P>The first line of <TT>INPUT.TXT</TT> contains the number&nbsp;<I>b</I> of 
+different kinds of products in the basket (0&lt;=<I>b</I>&lt;=5). Each of the 
+next <I>b</I> lines contains three values&nbsp;<I>c</I>, <I>k</I>, 
+and&nbsp;<I>p</I>. The value&nbsp;<I>c</I> is the (unique) product code 
+(1&lt;=<I>c</I>&lt;=999). The value&nbsp;<I>k</I> indicates how many items of 
+this product are in the basket (1&lt;=<I>k</I>&lt;=5). The value&nbsp;<I>p</I> 
+is the regular price per item (1&lt;=<I>p</I>&lt;=999). Notice that all together 
+at most 5*5=25 items can be in the basket. 
+<P>The first line of <TT>OFFER.TXT</TT> contains the number&nbsp;<I>s</I> of 
+special offers (0&lt;=<I>s</I>&lt;=99). Each of the next <I>s</I> lines 
+describes one offer by giving its structure and its reduced price. The first 
+number&nbsp;<I>n</I> on such a line is the number of different kinds of products 
+that are part of the offer (1&lt;=<I>n</I>&lt;=5). The next <I>n</I> pairs of 
+numbers (<I>c</I>,<I>k</I>) indicate that <I>k</I>&nbsp;items 
+(1&lt;=<I>k</I>&lt;=5) with product code&nbsp;<I>c</I> (1&lt;=<I>c</I>&lt;=999) 
+are involved in the offer. The last number&nbsp;<I>p</I> on the line stands for 
+the reduced price (1&lt;=<I>p</I>&lt;=9999). The reduced price of an offer is 
+less than the sum of the regular prices. 
+<H2>Output Data</H2>Write to the output file <TT>OUTPUT.TXT</TT> one line with 
+the lowest possible price to be paid for the purchases in the input file. 
+<H2>Example Input and Output</H2>Figure&nbsp;1 gives input and output files for 
+the example above. The product code of a flower is&nbsp;7 and that of a vase 
+is&nbsp;8. 
+<CENTER><PRE>
+_____________    ________________    ______________
+| INPUT.TXT |    | OFFER.TXT    |    | OUTPUT.TXT |
+|___________|    |______________|    |____________|
+| 2         |    | 2            |    | 14         |
+| 7 3 2     |    | 1 7 3 5      |    |____________|
+| 8 2 5     |    | 2 7 1 8 2 10 |                  
+|___________|    |______________|                  
+</PRE>Figure&nbsp;1: Example input and output </CENTER>
+<HR>
+<A href="mailto:ioi95@win.tue.nl">IOI 95</A> </BODY></HTML>

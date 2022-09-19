@@ -1,0 +1,16 @@
+This is the README file for IOI 2001 competition task Mobiles.
+
+This directory includes
+- the task description, mobiles.rtf
+- code for a model solution, fastbixc.c or fastbixp.p
+- the competition inputs, mobiles_n.in, n=1,..,20
+
+You can generate the correct solutions using the model
+solutions. 
+
+If you want to study the solutions in more detail, 
+please see the IOI 2001 publication, which you can ftp from
+ftp://ftp.cs.uta.fi/pub/reports/pdf/A-2001-7.pdf
+
+
+

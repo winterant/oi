@@ -1,0 +1,15 @@
+This is the README file for IOI 2001 competition task Double.
+
+This directory includes
+- the task description, double.rtf
+- the competition input files, double_n.in, n=1,..,10
+- correct output files double_n.out, n=1,..,10.
+
+Unfortunately the libraries etc. are not available as yet.
+
+If you want to check up the solution,
+please see the IOI 2001 publication, which you can ftp from
+ftp://ftp.cs.uta.fi/pub/reports/pdf/A-2001-7.pdf
+
+
+

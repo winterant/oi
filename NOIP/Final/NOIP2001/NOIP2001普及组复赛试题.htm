@@ -1,0 +1,258 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0054)http://www.bashu.com.cn/olympic/jszl/2001_cz_pj_fs.htm -->
+<HTML><HEAD><TITLE>NOI</TITLE>
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR>
+<META content=FrontPage.Editor.Document name=ProgId>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<STYLE>P.MsoNormal {
+	TEXT-JUSTIFY: inter-ideograph; FONT-SIZE: 10.5pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: "Times New Roman"; TEXT-ALIGN: justify; mso-style-parent: ""
+}
+</STYLE>
+</HEAD>
+<BODY>
+<P class=MsoNormal style="TEXT-ALIGN: center" align=center><B><SPAN lang=EN-US 
+style="FONT-SIZE: 15pt">NOI’2001</SPAN><SPAN 
+style="FONT-SIZE: 15pt; FONT-FAMILY: 宋体">第七届全国青少年信息学（计算机）奥林匹克分区联赛复赛试题</SPAN></B></P>
+<P class=MsoNormal style="TEXT-ALIGN: center" align=center><B><SPAN 
+style="FONT-SIZE: 15pt; FONT-FAMILY: 宋体">普及组</SPAN></B></P>
+<P class=MsoNormal style="TEXT-ALIGN: center" align=center><B><SPAN lang=EN-US 
+style="FONT-SIZE: 15pt"></SPAN></B>&nbsp;</P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><B><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">题一</SPAN><SPAN style="FONT-SIZE: 12pt"> 
+</SPAN><SPAN style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">数的计算</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">(20</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">分</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">)</SPAN></B></P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><B><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">问题描述</SPAN></B></P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">我们要求找出具有下列性质数的个数</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">(</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">包含输入的自然数</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">n):</SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">先输入一个自然数</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">n(n&lt;=1000),</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">然后对此自然数按照如下方法进行处理</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">:</SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 18pt; TEXT-INDENT: 21.25pt"><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">1.<SPAN 
+style="FONT-WEIGHT: normal; FONT-SIZE: 7pt; FONT-STYLE: normal; FONT-FAMILY: Times New Roman; FONT-VARIANT: normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><SPAN style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">不作任何处理</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">;</SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 18pt; TEXT-INDENT: 21.25pt"><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">2.<SPAN 
+style="FONT-WEIGHT: normal; FONT-SIZE: 7pt; FONT-STYLE: normal; FONT-FAMILY: Times New Roman; FONT-VARIANT: normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">在它的左边加上一个自然数</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">,</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">但该自然数不能超过原数的一半</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">;</SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 18pt; TEXT-INDENT: 21.25pt"><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">3.<SPAN 
+style="FONT-WEIGHT: normal; FONT-SIZE: 7pt; FONT-STYLE: normal; FONT-FAMILY: Times New Roman; FONT-VARIANT: normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><SPAN style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">加上数后</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">,</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">继续按此规则进行处理</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">,</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">直到不能再加自然数为止</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">.</SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><B><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">样例</SPAN></B><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">:&nbsp; </SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">输入</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">:&nbsp; 6</SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN><SPAN style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">满足条件的数为</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">&nbsp; 6 (</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">此部分不必输出</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">)</SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16</SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+26</SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+126</SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+36</SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+136</SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 57.25pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">输出</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">:&nbsp; 6</SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 57.25pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"></SPAN>&nbsp;</P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><B><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">题二</SPAN><SPAN style="FONT-SIZE: 12pt"> 
+</SPAN><SPAN style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">最大公约数和最小公倍数问题</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">(20</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">分</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">)</SPAN></B></P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><B><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">问题描述</SPAN></B></P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">输入二个正整数</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">x0,y0(2&lt;=x0&lt;100000,2&lt;=y0&lt;=1000000),</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">求出满足下列条件的</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">P,Q</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">的个数</SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">条件</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">:&nbsp; 1.P,A</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">是正整数</SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">2.</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">要求</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">P,Q</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">以</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">x0</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">为最大公约数</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">,</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">以</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">y0</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">为最小公倍数</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">.</SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">试求</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">:</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">满足条件的所有可能的两个正整数的个数</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">.</SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><B><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">样例</SPAN></B></P>
+<P class=MsoNormal style="TEXT-INDENT: 57.25pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">输入</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">:x0=3&nbsp;&nbsp; yo=60</SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 57.25pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">输出</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">:4</SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 57.25pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">说明</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">(</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">不用输出</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">)</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">此时的</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">&nbsp; P&nbsp; Q&nbsp; </SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">分别为</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">: </SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 143.95pt; TEXT-INDENT: 12pt"><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp; 
+60</SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 150pt; TEXT-INDENT: 21.25pt"><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">15<SPAN 
+style="FONT-WEIGHT: normal; FONT-SIZE: 7pt; FONT-STYLE: normal; FONT-FAMILY: Times New Roman; FONT-VARIANT: normal">&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><SPAN lang=EN-US style="FONT-SIZE: 12pt">&nbsp;&nbsp;12</SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 150pt; TEXT-INDENT: 21.25pt"><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">12<SPAN 
+style="FONT-WEIGHT: normal; FONT-SIZE: 7pt; FONT-STYLE: normal; FONT-FAMILY: Times New Roman; FONT-VARIANT: normal">&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><SPAN lang=EN-US style="FONT-SIZE: 12pt">&nbsp;&nbsp;15</SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 150pt; TEXT-INDENT: 21.25pt"><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">60<SPAN 
+style="FONT-WEIGHT: normal; FONT-SIZE: 7pt; FONT-STYLE: normal; FONT-FAMILY: Times New Roman; FONT-VARIANT: normal">&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">&nbsp;&nbsp;&nbsp;3</SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 57.25pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">所以</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">:</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">满足条件的所有可能的两个正整数的个数共</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">4</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">种</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">.</SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"></SPAN>&nbsp;</P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"></SPAN>&nbsp;</P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><B><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">题三　求先序排列（</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">30</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">分）</SPAN></B></P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><B><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">问题描述</SPAN></B></P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">给出一棵二叉树的中序与后序排列。求出它的先序排列。（约定树结点用不同的大写字母表示，长度</SPAN><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">&lt;=8</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">）。</SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><B><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">样例</SPAN></B></P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">输入：</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">BADC&nbsp; BDCA</SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">输出：</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">ABCD</SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><B><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt"></SPAN></B>&nbsp;</P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><B><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">题四　装箱问题（</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">30</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">分）</SPAN></B></P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><B><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">问题描述</SPAN></B></P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">有一个箱子容量为</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">V</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">（正整数，</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">0</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">＜＝</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">V</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">＜＝</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">20000</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">），同时有</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">n</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">个物品（</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">0</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">＜</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">n</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">＜＝</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">30</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">＝，每个物品有一个体积（正整数）。</SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">要求</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">n</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">个物品中，任取若干个装入箱内，使箱子的剩余空间为最小。</SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><B><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">样例</SPAN></B></P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">输入：</SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 31.5pt; TEXT-INDENT: 21.25pt"><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">24<SPAN 
+style="FONT-WEIGHT: normal; FONT-SIZE: 7pt; FONT-STYLE: normal; FONT-FAMILY: Times New Roman; FONT-VARIANT: normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">一个整数，表示箱子容量</SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 32.25pt; TEXT-INDENT: 21.25pt"><SPAN 
+lang=EN-US style="FONT-SIZE: 12pt">6<SPAN 
+style="FONT-WEIGHT: normal; FONT-SIZE: 7pt; FONT-STYLE: normal; FONT-FAMILY: Times New Roman; FONT-VARIANT: normal">&nbsp;&nbsp; 
+</SPAN></SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">一个整数，表示有</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">n</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">个物品</SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 60pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">8</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">　</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">&nbsp;&nbsp; </SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">接下来</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">n</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">行，分别表示这</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">n </SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">个物品的各自体积</SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 60pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">3</SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 60pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">12</SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 60pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">7</SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 60pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">9</SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 60pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">7</SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 21.25pt"><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">输出：</SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 60pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 12pt">0</SPAN><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 宋体">　　一个整数，表示箱子剩余空间。</SPAN></P></BODY></HTML>

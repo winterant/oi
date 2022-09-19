@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0055)http://olympiads.win.tue.nl/ioi/ioi95/contest/pack.html -->
+<HTLM><HTML><HEAD><TITLE>IOI'95: Task 1-1: Packing</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<META content="MSHTML 6.00.2600.0" name=GENERATOR></HEAD>
+<BODY background="IOI'95 Task 1-1 Packing.files/backgrnd.gif">
+<H1><A href="http://olympiads.win.tue.nl/ioi/ioi95/index.html"><IMG 
+alt="[ IOI Home page ]" hspace=5 src="IOI'95 Task 1-1 Packing.files/logo.gif" 
+align=middle border=0></A> Task 1-1: Packing Rectangles</H1>
+<CENTER><IMG src="IOI'95 Task 1-1 Packing.files/pack.gif" align=bottom> 
+<BR>Figure 1: The six basic layouts of four rectangles </CENTER>
+<P>Four rectangles are given. Find the smallest enclosing (new) rectangle into 
+which these four may be fitted without overlapping. By smallest rectangle we 
+mean the one with the smallest area. 
+<P>All four rectangles should have their sides parallel to the corresponding 
+sides of the enclosing rectangle. Figure 1 shows six ways to fit four rectangles 
+together. These six are the only possible basic layouts, since any other layout 
+can be obtained from a basic layout by rotation or reflection. 
+<P>There may exist several different enclosing rectangles fulfilling the 
+requirements, all with the same area. You have to produce <I>all</I> such 
+enclosing rectangles. 
+<P>
+<H2>Input Data</H2>The input file <TT>INPUT.TXT</TT> consists of four lines. 
+Each line describes one given rectangle by two positive integers: the lengths of 
+the sides of the rectangle. Each side of a rectangle is at least 1 and at most 
+50. 
+<H2>Output Data</H2>The output file <TT>OUTPUT.TXT</TT> should contain one line 
+more than the number of solutions. The first line contains a single integer: the 
+minimum area of the enclosing rectangles (Subtask A). Each of the following 
+lines contains one solution described by two numbers <I>p</I> and <I>q</I> with 
+<I>p</I>&lt;=<I>q</I> (Subtask B). These lines must be sorted in ascending order 
+of <I>p</I>, and must all be different. 
+<H2>Example Input and Output</H2>Figure 2 gives example input and output files. 
+<CENTER><PRE>
+_____________     ______________
+| INPUT.TXT |     | OUTPUT.TXT |
+|___________|     |____________|
+| 1 2       |     | 40         |
+| 2 3       |     | 4 10       |
+| 3 4       |     | 5 8        |
+| 4 5       |     |____________|
+|___________|                   
+</PRE>Figure 2: Example input and output </CENTER>
+<HR>
+<A href="mailto:ioi95@win.tue.nl">IOI 95</A> </BODY></HTML>

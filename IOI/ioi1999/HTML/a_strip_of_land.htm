@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0039)http://www.ioi99.org.tr/tasks/land.html -->
+<HTML><HEAD><TITLE>A STRIP OF LAND</TITLE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<META content="MSHTML 5.00.2014.210" name=GENERATOR></HEAD>
+<BODY aLink=#a5b4d8 bgColor=#a5b4d8 link=#0e2c73 text=#0e2c73 vLink=#0e2c73>
+<TABLE bgColor=#ffffff cellPadding=20 cellSpacing=10>
+  <TBODY>
+  <TR>
+    <TD><B><FONT face=Tahoma size=5>
+      <P align=left>A STRIP OF LAND</P></FONT><FONT face=Tahoma size=4>
+      <P>PROBLEM</P></FONT></B>
+      <P align=justify>The residents of Dingilville are trying to locate a 
+      region to build an airport. The map of the land is at hand. The map is a 
+      rectangular grid of unit squares, each identified by a pair of coordinates 
+      (<I>x</I>,<I>y</I>), where <I>x</I> is the horizontal <FONT 
+      color=#ff0000>(west-east)</FONT> and <I>y</I> is the vertical <FONT 
+      color=#ff0000>(south-north)</FONT> coordinate. The height of every square 
+      is shown on the map. </P>
+      <P align=justify>Your task is to find a rectangular region of squares with 
+      the largest area (i.e. a rectangular region consisting of the largest 
+      number of squares) such that</P>
+      <OL type=a>
+        <LI>the height difference between the highest and the lowest squares of 
+        the region is less than or equal to a given limit <I>C</I>, and 
+        <LI>the width (i.e. the number of squares along the west-east direction) 
+        of the region is at most 100. </LI></OL>
+      <P>In case there is more than one such region you are required to report 
+      only one of them.</P>
+      <P>&nbsp;</P><FONT face=Tahoma size=4><B>
+      <P>ASSUMPTIONS&nbsp; </B></FONT><FONT size=1>
+      <UL>
+        <LI>1 &lt;= <I>U </I>&lt;=700, 1 &lt;= <I>V </I>&lt;=700 where <I>U 
+        </I>and<I> V </I>designate the dimensions of the map. More specifically, 
+        <I>U</I> is the number of squares in the west-east direction, and 
+        <I>V</I>, in the south-north direction. </FONT>
+        <LI>0 &lt;= <I>C &lt;= </I>10 
+        <LI>-30,000 &lt;= <I>H<SUB>xy</SUB></I> &lt;= 30,000 where the integer 
+        <I>H<SUB>xy</SUB> </I>is the height of the square at coordinates 
+        (<I>x</I>,<I> y</I>), 1 &lt;= <I>x</I> &lt;= <I>U</I>, 1 &lt;= <I>y 
+        &lt;= V. </I>
+        <LI>The southwest corner square of the map has the coordinates (1,1) and 
+        the northeast corner has the coordinates (<I>U</I>,<I>V</I>). </LI></UL>
+      <P>&nbsp;</P><FONT face=Tahoma size=4><B>
+      <P>INPUT</P></B></FONT>
+      <P>The input is a text file named <FONT 
+      face=Courier><B>land.inp</B></FONT>. 
+      <UL>
+        <LI>The first line contains three integers: <I>U</I>, <I>V</I> and 
+        <I>C</I>. 
+        <LI>Each of the following <I>V</I> lines contains the integers 
+        <I>H<SUB>xy</SUB></I> for <I>x =</I> 1,…,<I>U</I>. More specifically, 
+        <I>H<SUB>xy</SUB></I> occurs as the <I>x</I>’th number on the 
+        (<I>V</I>-<I>y+2)</I>’th input line. </LI></UL>
+      <P align=justify>&nbsp;</P><FONT face=Tahoma size=4><B>
+      <P>OUTPUT</P></B></FONT>
+      <P>The output must be a text file named <FONT 
+      face=Courier><B>land.out</B></FONT> consisting of one line containing</P>
+      <P align=justify>four integers locating the region found: 
+      <I>X<SUB>min</SUB></I>, <I>Y<SUB>min</SUB></I>, <I>X<SUB>max</SUB></I>, 
+      <I>Y<SUB>max</SUB></I>, where (<I>X<SUB>min</SUB></I> , 
+      <I>Y<SUB>min</SUB></I> ) is the coordinates of the southwest corner 
+      square, and (<I>X<SUB>max</SUB></I>, <I>Y<SUB>max</SUB></I> ) is the 
+      coordinates of the northeast corner square of the region. </P><B>
+      <P>&nbsp;</P><FONT face=Tahoma size=4>
+      <P>EXAMPLE</P></FONT>
+      <P><IMG alt="land.jpg (87311 bytes)" height=371 
+      src="land.jpeg" width=600></P><FONT face=Tahoma 
+      size=4>
+      <P>EVALUATION</P></FONT></B>
+      <P>Your program will be allowed to run 130 seconds.<BR>No partial credit 
+      can be obtained for a test case.</P></TD></TR></TBODY></TABLE></BODY></HTML>

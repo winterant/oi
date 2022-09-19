@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0039)http://www.ioi99.org.tr/tasks/flat.html -->
+<HTML><HEAD><TITLE>FLATTEN</TITLE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<META content="MSHTML 5.00.2014.210" name=GENERATOR></HEAD>
+<BODY aLink=#a5b4d8 bgColor=#a5b4d8 link=#0e2c73 text=#0e2c73 vLink=#0e2c73>
+<TABLE bgColor=#ffffff cellPadding=20>
+  <TBODY>
+  <TR>
+    <TD><B><FONT face=Arial,Helvetica size=5>
+      <P align=left>FLATTEN</P></FONT><FONT face=Arial,Helvetica size=4>
+      <P></FONT><FONT face=Arial,Helvetica size=3>PROBLEM</P></FONT></B>
+      <P align=justify>A solitaire game is played given a row of <I>N</I> piles 
+      where each pile contains zero or more chips. See Figure 1. Piles are 
+      identified by integers 1 through <I>N</I>. In a <I>move</I> of this game 
+      you point to a pile, say <I>p</I>, and specify a number, say <I>m</I>. 
+      Then <I>m</I> chips are transferred from the pile <I>p</I> to each of its 
+      neighboring piles. See Figure 2 for an example.. Pile <I>p</I> has two 
+      neighbors, <I>p</I>-1 and <I>p</I>+1 if 1&lt;<I>p</I>&lt;<I>N</I>, and the 
+      neighbor 2 if <I>p</I>=1, and the neighbor <I>N</I>-1 if 
+      <I>p</I>=<I>N</I>. Note that to be able to make such a move the pile 
+      <I>p</I> must have at least 2<I>m</I> chips if it has two neighbors, and 
+      it must have at least <I>m</I> chips if it has only one neighbor.</P>
+      <P align=justify>The object of the game is to "flatten" all piles, that is 
+      make them have the same number of chips, by making as small as possible 
+      number of moves. In case there is more than one solution you are required 
+      to report only one of them.</P>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD><IMG alt=FIGURE1 height=135 src="flat1.jpeg" 
+            width=239> </TD>
+          <TD><IMG alt=FIGURE1 height=136 src="flat2.jpeg" 
+            width=231> </TD></TR>
+        <TR>
+          <TD><FONT size=2>Figure 1. Five piles with 0, 7, 8, 1 and 4 chips. 
+            </FONT></TD>
+          <TD><FONT size=2>Figure 2. Configuration of same piles after a move: 
+            <I>p</I>=2, <I>m</I>=2.</FONT> </TD></TR></TBODY></TABLE><FONT 
+      face=Arial,Helvetica size=4>
+      <P></FONT><FONT face=Arial,Helvetica 
+      size=3><STRONG>ASSUMPTIONS</STRONG></FONT><FONT size=1>
+      <UL></FONT>
+        <LI>It is guaranteed that it is possible to flatten the given piles in 
+        at most 110,5 000 moves. 
+        <LI>2 = <I>N</I> = 200 
+        <LI>0 = <I>C<SUB>i</SUB> </I>number of chips in a pile = 2000 where 
+        <I>C<SUB>i </SUB></I>.is the number of chips in the pile <I>i </I>when 
+        the game starts (1 = <I>i</I> = <I>N</I>). </LI></UL><FONT size=3>
+      <P>&nbsp;</P></FONT><B><FONT face=Arial,Helvetica size=4>
+      <P></FONT><FONT face=Arial,Helvetica size=3>INPUT</P></FONT></B>
+      <P>The input is a text file named <FONT face=Courier><B>flat.inp 
+      </B></FONT>having two lines.
+      <UL>
+        <LI>The first line: <I>contains an integer giving the value of NN</I>. 
+        <LI>On theThe second line: there will be <I>N</I> integers the <I>i 
+        </I>th of which is the value of <I>C<SUB>i</SUB></I>.nonnegative 
+        integers giving the number of chips in each pile. </LI></UL>
+      <P align=justify>These integers will be separated with one blank. The 
+      <I>i</I>’th number on the second line will be the number of chips in the 
+      pile <I>i </I>(1 = <I>i </I>= N<I> </I>) </P>
+      <P>&nbsp;</P><B><FONT face=Arial,Helvetica size=4>
+      <P></FONT><FONT face=Arial,Helvetica size=3>OUTPUT</P></FONT></B>
+      <P>The output will bemust be the text file named <FONT 
+      face=Courier><B>flat.out</B>.</FONT>.
+      <UL>
+        <LI>The first line: must contain the number of moves. (Call this value 
+        <I>, call it M</I>.) 
+        <LI>Each of the following <I>M</I> lines contains two integers 
+        representing a move: <I>p</I>,<I> m. </I>There must be M lines following 
+        the first line, each containing two integers, separated by one blank, 
+        representing a move. The first integer designates the id-number of the 
+        pile and the second integer represents the number specified in the move. 
+        </LI></UL>
+      <P align=justify>The order of moves on the output must be the same 
+      orderthat the moves are performed. So, your first move shall be written to 
+      the second line of the output file.</P>
+      <P>&nbsp;</P>
+      <P><FONT face=Arial><B>EXAMPLE</B></FONT></P>
+      <P><FONT face=Courier>flat.inp:</FONT> </P>
+      <TABLE border=1 cellSpacing=0>
+        <TBODY>
+        <TR>
+          <TD><PRE><FONT face=Courier>5
+0 7 8 1 4</FONT></PRE></TD></TR></TBODY></TABLE><FONT face=Courier size=3>
+      <P>flat.out</P></FONT><FONT size=3>
+      <TABLE border=1 cellSpacing=0>
+        <TBODY>
+        <TR>
+          <TD><PRE></FONT><FONT face=Courier size=3>5
+5 2
+3 4
+2 4
+3 1
+4 2
+</FONT><FONT face=Courier></PRE></FONT></TD></TR></TBODY></TABLE><B><FONT 
+      face=Arial,Helvetica size=4>
+      <P></FONT><FONT face=Arial,Helvetica size=3>&nbsp;</P></FONT></B>
+      <P><B><FONT face=Arial,Helvetica size=3>NOTE ON EVALUATION</FONT></B></P>
+      <P>Your program will be allowed to run 3 seconds.</P>
+      <P align=justify>To get full credit, <I>A</I>, for a test case, your 
+      number of moves, <I>x</I>, must be less than or equal to the number 
+      <I>B</I>, set by the evaluation program. Note that <I>B</I> is not 
+      necessarily minimal. In fact, <I>B</I> is chosen for a test case depending 
+      on the number of moves made by following a simple strategy with no 
+      redundant moves and the average number of chips in the piles. You can 
+      obtain partial credit for a test case. The points you get is calculated by 
+      rounding to the nearest integer the value obtained by the following 
+      formula: </P>
+      <TABLE cellSpacing=10>
+        <TBODY>
+        <TR>
+          <TD><I>A</I> </TD>
+          <TD>if <I>x &lt; B</I> </TD></TR>
+        <TR>
+          <TD><I>2*A* (2/3 * B - x) /B</I> </TD>
+          <TD>if <I>B &lt; x &lt; 2/3*B </I></TD></TR>
+        <TR>
+          <TD>0 </TD>
+          <TD>if <I>x &gt; 3/2*B 
+</I></TD></TR></TBODY></TABLE></FONT></TD></TR></TBODY></TABLE></BODY></HTML>

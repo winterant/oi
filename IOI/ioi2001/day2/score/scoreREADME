@@ -1,0 +1,14 @@
+This is the README file for IOI 2001 competition task Score.
+
+This directory includes
+- the task description, score.rtf
+- competition files to describe the "board", ie the position and
+  arrow information, score_n.in, where n=1,..,20
+- code for the optimal player/opponent, score.cpp
+
+If you want to know why the optimal player is optimal, 
+please see the IOI 2001 publication, which you can ftp from
+ftp://ftp.cs.uta.fi/pub/reports/pdf/A-2001-7.pdf
+
+
+
