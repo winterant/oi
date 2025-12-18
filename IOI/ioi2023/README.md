@@ -5,8 +5,8 @@
 | 编号 | 题目 | 名称 | 时间限制 | 内存限制 |
 | :--: | :--: | :--: | :--: | :--: |
 | 1A | closing | 封锁时刻 / Closing Time | 1.0 秒 | 2.0 GiB
-| 1B | longesttrip | 最⻓路程 / Longest Trip | 1.0 秒 | 2.0 GiB
-| 1C | soccer | ⾜球场 / Soccer Stadium | 3.5 秒 | 2.0 GiB
-| 2A | beechtree | ⼭⽑榉树 / Beech Tree | 1.5 秒 | 2.0 GiB
-| 2B | overtaking | 超⻋ / Overtaking | 2.5 秒 | 2.0 GiB
-| 2C | robot | 机器⼈⽐赛 / Robot Contest | 1.0 秒 | 2.0 GiB
+| 1B | longesttrip | 最长路程 / Longest Trip | 1.0 秒 | 2.0 GiB
+| 1C | soccer | 足球场 / Soccer Stadium | 3.5 秒 | 2.0 GiB
+| 2A | beechtree | 山毛榉树 / Beech Tree | 1.5 秒 | 2.0 GiB
+| 2B | overtaking | 超车 / Overtaking | 2.5 秒 | 2.0 GiB
+| 2C | robot | 机器人比赛 / Robot Contest | 1.0 秒 | 2.0 GiB
